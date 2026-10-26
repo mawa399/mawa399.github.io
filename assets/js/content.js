@@ -371,11 +371,11 @@ const SKILLS = [
     { name: "GDAL / OGR", logo: "gdal" }, { name: "sf · tmap (R)", logo: "r" }, { name: "Leaflet", logo: "leaflet" }, { name: "OpenLayers", logo: "openlayers" },
     { name: "deck.gl", abbr: "deck" }, { name: "ArcGIS Maps SDK for JS", logo: "arcgis" } ] },
   { icon: "i-database", fr: "Bases de données", en: "Databases", tools: [
-    { name: "PostgreSQL", logo: "postgresql" }, { name: "PostGIS (extension)", abbr: "PG" }, { name: "pgRouting (extension)", abbr: "pR" }, { name: "MySQL", logo: "mysql" } ] },
+    { name: "PostgreSQL", logo: "postgresql" }, { name: "PostGIS (extension)", abbr: "PG" }, { name: "pgRouting (extension)", abbr: "pR" }, { name: "MySQL", logo: "mysql" }, { name: "MongoDB", logo: "mongodb" } ] },
   { icon: "i-workflow", fr: "ETL & automatisation", en: "ETL & automation", tools: [
     { name: "FME", abbr: "FME" }, { name: "Make", logo: "make" }, { name: "Apache Airflow", logo: "airflow" }, { name: "Pentaho", abbr: "PDI" }, { name: "Docker", logo: "docker" }, { name: "Git", logo: "git" } ] },
   { icon: "i-chart", fr: "Dataviz & tableaux de bord", en: "Dataviz & dashboards", tools: [
-    { name: "Power BI", abbr: "BI" }, { name: "ArcGIS Dashboards", logo: "arcgis" }, { name: "Experience Builder", logo: "arcgis" }, { name: "Tableau", logo: "tableau" } ] }
+    { name: "Power BI", abbr: "BI" }, { name: "ArcGIS Dashboards", logo: "arcgis" }, { name: "Experience Builder", logo: "arcgis" }, { name: "Tableau", logo: "tableau" }, { name: "Streamlit", logo: "streamlit" } ] }
 ];
 
 /* ---------- Expériences (intitulés exacts du CV) ---------- */
