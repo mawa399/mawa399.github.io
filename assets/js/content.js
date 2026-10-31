@@ -181,7 +181,7 @@ const PROJECTS = [
   {
     id: "erosion", categories: ["web", "analysis"], pro: false,
     image: "assets/img/projets/erosion/1.jpg",
-    screenshots: ["assets/img/projets/erosion/1.jpg", "assets/img/projets/erosion/2.jpg", "assets/img/projets/erosion/3.jpg"],
+    screenshots: ["assets/img/projets/erosion/schema.jpg", "assets/img/projets/erosion/1.jpg", "assets/img/projets/erosion/2.jpg", "assets/img/projets/erosion/3.jpg"],
     github: "https://github.com/mawa399/erosion-cotiere-saint-louis-senegal", demo: "https://mawa399.github.io/erosion-cotiere-saint-louis-senegal/app/",
     stack: ["Google Earth Engine", "CoastSat", "Python", "GeoPandas", "DSAS", "MapLibre GL JS", "Landsat", "Sentinel-2"],
     fr: {
