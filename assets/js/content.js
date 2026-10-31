@@ -179,6 +179,29 @@ const PROJECTS = [
     }
   },
   {
+    id: "erosion", categories: ["web", "analysis"], pro: false,
+    image: "assets/img/projets/erosion/1.jpg",
+    screenshots: ["assets/img/projets/erosion/1.jpg", "assets/img/projets/erosion/2.jpg", "assets/img/projets/erosion/3.jpg"],
+    github: "https://github.com/mawa399/erosion-cotiere-saint-louis-senegal", demo: "https://mawa399.github.io/erosion-cotiere-saint-louis-senegal/app/",
+    stack: ["Google Earth Engine", "CoastSat", "Python", "GeoPandas", "DSAS", "MapLibre GL JS", "Landsat", "Sentinel-2"],
+    fr: {
+      kicker: "Projet · Télédétection / Web SIG",
+      title: "Érosion côtière à Saint-Louis du Sénégal (1984-2026)",
+      summary: "Suivi du trait de côte de la Langue de Barbarie sur 42 ans à partir d'images Landsat et Sentinel-2, taux d'évolution calculés avec DSAS et application web avec curseur temporel.",
+      context: "La Langue de Barbarie est une flèche sableuse qui protège Saint-Louis de l'océan. Depuis l'ouverture d'un canal de délestage en 2003, devenu une brèche, la côte recule fortement par endroits et des villages ont disparu. Il fallait mesurer où, de combien et à quelle vitesse.",
+      steps: ["Extraction automatique de 616 traits de côte avec CoastSat et Google Earth Engine (Landsat 5, 7, 8 et Sentinel-2), dans Google Colab", "Filtres pour écarter la rive du fleuve et les fausses détections, découpage en quatre périodes", "Un trait de côte médian par année, calculé sur des transects tous les 50 m en Python", "Taux d'évolution avec DSAS 6.2 (bilan net, régression linéaire pondérée, intervalle de confiance à 90 %)", "Application MapLibre : traits annuels sur imagerie satellite, transects colorés par taux et graphique par transect"],
+      results: ["Recul jusqu'à 7,4 m/an au sud de la flèche, soit environ 190 m depuis 1984", "Avancée jusqu'à 165 m au centre, côte stable au nord et à Guet Ndar", "Résultats DSAS concordants avec le calcul Python (corrélation de 0,97)"]
+    },
+    en: {
+      kicker: "Project · Remote sensing / Web GIS",
+      title: "Coastal erosion in Saint-Louis, Senegal (1984-2026)",
+      summary: "Shoreline monitoring of the Langue de Barbarie over 42 years from Landsat and Sentinel-2 imagery, change rates computed with DSAS and a web app with a time slider.",
+      context: "The Langue de Barbarie is a sand spit that shields Saint-Louis from the ocean. Since a relief channel opened in 2003 and turned into a breach, the coast has retreated sharply in places and villages have disappeared. The goal was to measure where, how much and how fast.",
+      steps: ["Automatic extraction of 616 shorelines with CoastSat and Google Earth Engine (Landsat 5, 7, 8 and Sentinel-2), in Google Colab", "Filters to discard the river bank and false detections, processing split into four periods", "One median shoreline per year, computed on transects every 50 m in Python", "Change rates with DSAS 6.2 (net movement, weighted linear regression, 90% confidence interval)", "MapLibre app: yearly shorelines over satellite imagery, transects coloured by rate and a chart per transect"],
+      results: ["Retreat of up to 7.4 m/yr at the south of the spit, about 190 m since 1984", "Advance of up to 165 m in the centre, stable coast in the north and at Guet Ndar", "DSAS results consistent with the Python calculation (0.97 correlation)"]
+    }
+  },
+  {
     id: "gentilly", categories: ["web", "analysis"], pro: false,
     image: "assets/img/projets/gentilly/1.jpg",
     screenshots: ["assets/img/projets/gentilly/1.jpg", "assets/img/projets/gentilly/3.jpg", "assets/img/projets/gentilly/4.jpg", "assets/img/projets/gentilly/2.jpg"],
