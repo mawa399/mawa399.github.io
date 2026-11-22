@@ -316,22 +316,22 @@ const PROJECTS = [
     id: "metro", categories: ["web", "auto"], pro: false,
     image: "assets/img/projets/metro/1.jpg", screenshots: ["assets/img/projets/metro/1.jpg"],
     github: "https://github.com/mawa399/mini-paris-3d-metro", demo: "https://mawa399.github.io/mini-paris-3d-metro/",
-    stack: ["deck.gl", "JavaScript", "Python", "NetworkX", "GTFS", "API PRIM"],
+    stack: ["deck.gl", "MapLibre", "JavaScript", "Python", "NetworkX", "GTFS", "API PRIM", "Cloudflare Workers"],
     fr: {
       kicker: "Projet · Web 3D / Temps réel",
       title: "Mini Paris 3D : le métro parisien en temps réel",
-      summary: "Les 16 lignes du métro animées en 3D sur les tracés réels, d'après les horaires d'Île-de-France Mobilités ou en temps réel avec l'API PRIM. Inspiré de Mini Tokyo 3D.",
+      summary: "Les 16 lignes du métro animées en 3D sur les tracés réels, d'après les horaires d'Île-de-France Mobilités ou en temps réel avec l'API PRIM. La version 2 ajoute la fréquentation, l'accessibilité, les isochrones et la vue de rue. Inspiré de Mini Tokyo 3D.",
       context: "Adapter au métro parisien l'idée de Mini Tokyo 3D, avec mes propres données et ma propre chaîne de traitement.",
-      steps: ["Tracés regroupés en graphe par ligne (NetworkX) et assemblés en itinéraires", "Lecture en flux du GTFS (13 millions de lignes d'horaires)", "Position des rames interpolée le long des tracés", "Serveur Python local qui interroge PRIM pour le temps réel", "Rendu WebGL avec deck.gl"],
-      results: ["16 lignes et 321 gares", "Environ 11 600 trajets modélisés un jour de semaine"]
+      steps: ["Tracés regroupés en graphe par ligne (NetworkX) et assemblés en itinéraires", "Lecture en flux du GTFS (13 millions de lignes d'horaires)", "Position des rames interpolée le long des tracés", "Temps réel PRIM via un relais Cloudflare Worker (clé API gardée côté serveur), plus info trafic", "Fréquentation par station (validations IDFM) et accessibilité en fauteuil roulant (GTFS)", "Isochrones depuis une gare (algorithme Connection Scan, métro puis marche)", "Vue de rue Panoramax à 360°, thème clair, sombre ou automatique", "Rendu WebGL avec MapLibre (bâtiments en 3D) et deck.gl"],
+      results: ["16 lignes et 321 gares", "Environ 11 800 trajets modélisés un jour de semaine", "Carte en ligne avec temps réel, sans serveur à maintenir"]
     },
     en: {
       kicker: "Project · 3D web / Real time",
       title: "Mini Paris 3D: the Paris metro in real time",
-      summary: "All 16 metro lines animated in 3D on the real tracks, from Île-de-France Mobilités timetables or in real time with the PRIM API. Inspired by Mini Tokyo 3D.",
+      summary: "All 16 metro lines animated in 3D on the real tracks, from Île-de-France Mobilités timetables or in real time with the PRIM API. Version 2 adds ridership, accessibility, isochrones and street view. Inspired by Mini Tokyo 3D.",
       context: "Bring the Mini Tokyo 3D idea to the Paris metro, with my own data and processing pipeline.",
-      steps: ["Track segments grouped into one graph per line (NetworkX) and assembled into routes", "Streaming read of the GTFS feed (13 million timetable rows)", "Train positions interpolated along the tracks", "Local Python server polling PRIM for real time", "WebGL rendering with deck.gl"],
-      results: ["16 lines and 321 stations", "About 11,600 trips modelled on a weekday"]
+      steps: ["Track segments grouped into one graph per line (NetworkX) and assembled into routes", "Streaming read of the GTFS feed (13 million timetable rows)", "Train positions interpolated along the tracks", "PRIM real time through a Cloudflare Worker relay (API key kept server-side), plus service alerts", "Ridership per station (IDFM validations) and wheelchair accessibility (GTFS)", "Isochrones from a station (Connection Scan algorithm, metro then walking)", "Panoramax 360° street view, light, dark or automatic theme", "WebGL rendering with MapLibre (3D buildings) and deck.gl"],
+      results: ["16 lines and 321 stations", "About 11,800 trips modelled on a weekday", "Online map with real time, no server to maintain"]
     }
   },
   {
