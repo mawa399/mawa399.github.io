@@ -315,7 +315,7 @@ const PROJECTS = [
   {
     id: "metro", categories: ["web", "auto"], pro: false,
     image: "assets/img/projets/metro/1.jpg", screenshots: ["assets/img/projets/metro/1.jpg"],
-    github: "https://github.com/mawa399/mini-paris-3d-metro", demo: "",
+    github: "https://github.com/mawa399/mini-paris-3d-metro", demo: "https://mawa399.github.io/mini-paris-3d-metro/",
     stack: ["deck.gl", "JavaScript", "Python", "NetworkX", "GTFS", "API PRIM"],
     fr: {
       kicker: "Projet · Web 3D / Temps réel",
