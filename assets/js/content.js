@@ -406,11 +406,11 @@ const EXPERIENCES = [
   {
     org: "Veolia Assainissement & Maintenance France", place: "Gonesse (95)", project: "predire",
     stack: ["Python", "SQL", "ArcGIS Pro", "ArcGIS Enterprise", "Experience Builder", "Field Maps", "Survey123", "QGIS", "PyQt", "Make"],
-    fr: { role: "Chargé de projet géomatique", dates: "Août 2025 – févr. 2026 · 7 mois",
+    fr: { role: "Chargé de projet géomatique", dates: "Août 2025 – août 2026 · 1 an 1 mois",
       context: "Service SIG de l'activité assainissement : données des réseaux, applications web et automatisation des traitements.",
       missions: ["Scripts d'automatisation Python/SQL pour l'intégration, le contrôle qualité et la mise à jour des données géographiques", "Gestion et structuration de bases de données géographiques", "Développement et maintenance d'applications web cartographiques (ArcGIS Enterprise, Experience Builder, Web AppBuilder)", "Pipelines de traitement automatisés : planification, logs, supervision, gestion des erreurs", "Cartes, analyses et tableaux de bord SIG, support utilisateurs et documentation technique"],
       impact: "Des outils métier utilisés au quotidien par les équipes et déployés dans d'autres agences. La préparation d'une mission drone est passée de 1 h 30 à moins de 30 min, et la base des réseaux est tenue à jour sans ressaisie manuelle." },
-    en: { role: "GIS Project Officer", dates: "Aug 2025 – Feb 2026 · 7 months",
+    en: { role: "GIS Project Officer", dates: "Aug 2025 – Aug 2026 · 1 yr 1 mo",
       context: "GIS team of the sewer business: network data, web applications and process automation.",
       missions: ["Python/SQL automation scripts for loading, quality-checking and updating geographic data", "Management and structuring of geographic databases", "Development and maintenance of web mapping applications (ArcGIS Enterprise, Experience Builder, Web AppBuilder)", "Automated processing pipelines: scheduling, logging, monitoring, error handling", "GIS maps, analyses and dashboards, user support and technical documentation"],
       impact: "Business tools used daily by the teams and rolled out to other branches. Drone mission preparation went from 1 h 30 to under 30 min, and the network database stays up to date without manual re-entry." }
